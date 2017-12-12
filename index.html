@@ -1,704 +1,314 @@
-	<!DOCTYPE html>
-	<!--[if IE 7 ]>
-	<html lang="en" class="no-js ie7"> <![endif]-->
-	<!--[if IE 8 ]>
-	<html lang="en" class="no-js ie8"> <![endif]-->
-	<!--[if IE 9 ]>
-	<html lang="en" class="no-js ie9"> <![endif]-->
-	<!--[if (gt IE 9)|!(IE)]><!-->
-	<html lang="en" class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Pilates</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-	<head>
-	    <!-- =========================================
-	    Basic
-	    ========================================== -->
-	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	    <title>Metal</title>
-	    <meta name="keywords" content="HTML5, CSS3, responsive, Template"/>
-	    <meta name="author" content="Cloud Software"/>
-	    <meta name="description" content="Metal- Responsive HTML5/CSS3 Template"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+   
 
-	    <!-- =========================================
-	    Mobile Configurations
-	    ========================================== -->
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
-	    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-	    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    
+    <link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
 
-	    <!-- Fonts -->
-	    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
-	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-	    <link rel="stylesheet" href="fonts/flaticon/flaticon.css"/>
-	    <!-- //Fonts -->
+    <link href="css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="120" >
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    
+
+    <div id="header">
+        <div class="bg-overlay"></div>
+            <div id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="ion-navicon"></i>
+                        </button>
+                        <a class="navbar-brand" href="#"><h2>PilatEs</h2></a>
+                    </div><!-- navbar-header -->
+                <div id="navbar" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#story">Story</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#footer">Footer</a></li>
+
+                    </ul>
+                </div><!--/.navbar-collapse -->
+                </div><!-- container -->
+            </div><!-- menu -->
+
+            <div class="center text-right">
+                <div class="container">
+                    <div class="banner">
+                        <h1 class="condensed">Mind</h1>
+                        <h1 class="condensed">Body</h1>
+                        <h1 class="condensed">Spirit</h1>
+                    </div>
+                    <div class="subtitle"><h4>Keep calm and do yoga</h4></div>
+                </div>
+            </div>
+        <div class="bottom">
+            <div class="text-right container hidden-xs"><a id="scrollDownArrow" href="#"><i class="ion-ios7-arrow-thin-down"></i></a></div>
+            <div class="signupForm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <b class="mb10">The Pilates Method of Body Conditioning develops the body uniformly, invigorates the mind and elevates the spirit.</b>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <form class="form-inline subscribe-form" id="subscription-form" role="form">
+                                <div class="form-group">
+                                    <label class="sr-only" for="subscriber-name">Full Name</label>
+                                    <input name="name" type="text" class="form-control" id="subscriber-name" placeholder="Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="subscriber-email">Email address</label>
+                                    <input name="email" type="email" class="form-control" id="subscriber-email" placeholder="Your Email">
+                                </div>
+                                <input id="subscribe-button" type="submit" class="btn btn-primary" value="Get it!">
+                            </form>
+                            <!-- SUCCESS OR ERROR MESSAGES -->
+                            <div id="subscription-response"></div>
+                        </div>
+                    </div>
+                </div><!-- container -->
+            </div><!--/signupForm-->
+        </div>
+    </div>
+    <!-- /#header -->
 
 
-	    <!-- Normalize CSS -->
-	    <link rel="stylesheet" href="css/normalize.css"/>
 
-	    <!-- Owl Carousel CSS -->
-	    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-	    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+    <div id="video" class="cyan-wrapper">
+        <div class="container inner">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="col-wrapper">
+                        <h1 class="giant-heading">
+                            Vivamus<br/>
+                            sagittis<br/>
+                            consect
+                        </h1>
 
-	    <!-- =========================================
-	    CSS
-	    ========================================== -->
-	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-	    <link rel="stylesheet" href="css/off-canvas.css"/>
-	    <link rel="stylesheet" href="css/style.css"/>
+                        <p>Accepting means you allow yourself to feel whatever it is you are feeling at that moment. It is part of the isness of the Now. You can’t argue with what is.</p>
 
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-wrapper">
+                        <div class="video"></div>
+                        
+                        <div class="video-container">
+                            <iframe src="http://player.vimeo.com/video/73344299?byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
 
-	    <!-- =========================================
-	    Head Libs
-	    ========================================== -->
-	    <script src="js/modernizr-2.6.2.min.js"></script>
-
-	    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-	    <!--[if lt IE 9]>
-	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	    <script src="js/respond.min.js"></script>
-	    <![endif]-->
-
-	</head>
-
-
-	<body>
-
-		<div class="wrapper" id="wrapper">
-      		<div class="offcanvas-pusher">
-	      		<div class="content-wrapper">
-					<div class="container">
-						<div class="row">
-							<section class="header">
-								<header class="header-wrapper">
-									<div class="header-top">
-										<div class="row">
-									        <div class="col-md-4 col-xs-12 col-sm-3">
-									            <div class="logo">
-									                <a title="Steellex" href="index.html">
-									                    <img src="img/logo.png" alt="Steellex">
-									                </a>
-									            </div>
-								            </div>
-								            <div class="col-md-6 col-sm-5">
-								            <div class="location">
-								           
-													<p>8901 Marmora Road <br>
-													Glasgow, DO4 89GR.</p>
-								            	</div>
-								            	
-								            </div>
-								            <div class="col-md-2 col-sm-4">
-												<div class="phone">
-													<p>Call us!</p>
-													<strong>1-800-987-654</strong>
-												</div>										
-								            </div>
-								         
-										</div>
-									</div>
-							    	<div class="main-nav-bar">   
-								            <div class="navbar">
-								                <div class="navbar-header navbar-right pull-left">
-								                    <!-- offcanvas-trigger-effects -->
-								                    <div id="offcanvas-trigger-effects" class="offcanvas">
-								                        <button type="button" class="navbar-toggle visible-xs" data-toggle="offcanvas"
-								                                data-target=".navbar-collapse" data-placement="left" data-effect="offcanvas-effect">
-								                            <i class="fa fa-bars"></i>
-								                        </button>
-								                    </div>
-								                    <!-- offcanvas-trigger-effects -->
-								                </div>
-
-								                <!-- navbar-collapse -->
-								                <nav role="navigation" class="collapse navbar-collapse navbar main-nav">
-												    <ul class="nav navbar-nav navbar-left">
-												      <li><a href="index.html">Home</a></li>
-												      <li><a href="about.html">About Us</a></li>
-												      <li class="dropdown"><a href="service.html">Services</a>
-												      		<ul class="dropdown-menu">
-																<li><a href="tanks.html">Tanks</a></li>
-																<li><a href="stacks.html">Stacks</a></li>
-																<li><a href="duct.html">Ducting</a></li>
-																<li><a href="pipe.html">Pipe</a></li>
-																<li><a href="angle.html">Steel Angels</a></li>
-																<li><a href="beam.html">Steel Beams</a></li>
-															</ul>
-														</li>
-												   
-												      <li><a href="contact.html">Contact Us</a></li>
-												    </ul>
-								                    <!-- /navbar-nav -->
-
-										            <div class="navbar-right">
-														<div class="header-search">
-															<form>
-															   <input type="search" name="search" placeholder="Search">
-															   <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-															</form>
-
-														</div>					            
-											        </div>
-								                </nav>
-								                <!-- /navbar-collapse -->
-								            </div>
-								            <!-- /navbar -->
-								    </div>
-								    <!-- .main-nav-bar -->
-								</header>
-							</section>
-							<!--End .header -->
-						</div>
-						<div class="row">
-							<section class="banner-section">
-								<div id="mainslider" class="carousel slide" data-ride="carousel">
-
-								  <!-- Indicators -->
-								  	<ol class="carousel-indicators">
-								    	<li data-target="#mainslider" data-slide-to="0" class="active"></li>
-								    	<li data-target="#mainslider" data-slide-to="1"></li>
-								  	</ol>
-
-								  	<!-- Wrapper for slides -->
-								  	<div class="carousel-inner" role="listbox">
-									    <div class="item active">
-									      	<img src="img/slide1.jpg" alt="slide1">
-											<div class="banner-caption pull-right">
-												<h1>We’re Professional
-													Competitive &amp; 
-													Competent
-												</h1>
-												<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas venenatis.</p>
-											</div>
-									    </div>
-									    <div class="item">
-									      	<img src="img/slide1.jpg" alt="slide2">
-									      	<div class="banner-caption pull-right">
-												<h1>We’re Professional
-													Competitive &amp; 
-													Competent
-												</h1>
-												<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas venenatis.</p>
-											</div>
-									    </div>
-								  	</div>
-								</div>
-							</section>
-							<!-- .banner-section-->
-						</div>
-						<div class="row">
-							<section class="service-section">
-								<div class="service-items">
-									<div class="row">
-										<div class="col-md-6 col-sm-6">
-											<div class="service-list">
-												<img src="img/service1.jpg" alt="">
-												<div class="service-caption">
-													<div class="service-left">
-														<h2>Ducting</h2>
-														<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-													</div>
-													<div class="service-right">
-														<a href="duct.html"><i class="fa fa-angle-right"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 col-sm-6">
-											<div class="service-list">
-												<img src="img/service2.jpg" alt="">
-												<div class="service-caption">
-													<div class="service-left">
-														<h2>Stacks</h2>
-														<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-													</div>
-													<div class="service-right">
-														<a href="stacks"><i class="fa fa-angle-right"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-md-6 col-sm-6">
-											<div class="service-list">
-												<img src="img/service3.jpg" alt="">
-												<div class="service-caption">
-													<div class="service-left">
-														<h2>Tanks</h2>
-														<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-													</div>
-													<div class="service-right">
-														<a href="tanks.html"><i class="fa fa-angle-right"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 col-sm-6">
-											<div class="service-list">
-												<img src="img/service4.jpg" alt="">
-												<div class="service-caption">
-													<div class="service-left">
-														<h2>Structural</h2>
-														<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-													</div>
-													<div class="service-right">
-														<a href="beam.html"><i class="fa fa-angle-right"></i></a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<!-- .banner-section-->
-						</div>
-						<!-- section row --> 
-
-						<div class="row">
-							<section class="about-section">
-								<div class="col-md-12">
-									<div class="about-us-carousel">
-										<div class="about-carousel-item">
-					                        <div class="item">
-					                            <div class="about-us">
-					                            	<h3>Quality</h3>
-					                            	<p>
-					                            		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-													</p>
-					                            </div>
-				                            </div>
-				                            <div class="item">
-					                            <div class="about-us">
-					                            	<h3>Experience</h3>
-					                            	<p>
-					                            		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-													</p>
-					                            </div>
-				                            </div>
-				                            <div class="item">
-					                            <div class="about-us">
-					                            	<h3>Reliable</h3>
-					                            	<p>
-					                            		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-													</p>
-					                            </div>
-				                            </div>
-				                            <div class="item">
-					                            <div class="about-us">
-					                            	<h3>Quality</h3>
-					                            	<p>
-					                            		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-													</p>
-					                            </div>
-				                            </div>
-				                            <div class="item">
-					                            <div class="about-us">
-					                            	<h3>Reliable</h3>
-					                            	<p>
-					                            		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-													</p>
-					                            </div>
-				                            </div>
-				                            <div class="item">
-					                            <div class="about-us">
-					                            	<h3>Experience</h3>
-					                            	<p>
-					                            		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-													</p>
-					                            </div>
-				                            </div>
-				                            <div class="item">
-					                            <div class="about-us">
-					                            	<h3>Reliable</h3>
-					                            	<p>
-					                            		Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-													</p>
-					                            </div>
-					                        </div>
-				                        </div>
-										<div class="customNavigation clients-navigation">
-					                        <a class="next"><i class="fa fa-angle-right"></i></a>
-					                        <a class="prev"><i class="fa fa-angle-left"></i></a>
-					                    </div>			                        
-		                        	</div>
-								</div>
-							</section>
-							<!-- .about-section --> 
-						</div>
-						<!-- section row --> 
-
-						<div class="row">
-							<section class="products-section clearfix">
-								<div class="col-md-3">
-									<div class="product-item">
-										<i class="flaticon-tank"></i>
-										
-											<h4>SS Tanks</h4>
-											<p>A base metal is a common and inexpensive metal.</p>
-											<a class="read-more" href="single-service.html">Read More</a>
-										
-									</div>
-								</div>
-
-								<div class="col-md-3">
-									<div class="product-item">
-										<i class="flaticon-control-system"></i>
-										
-											<h4>Chequered Plates</h4>
-											<p>Forging is a manufacturing process involving the shaping.</p>
-											<a class="read-more" href="single-service.html">Read More</a>
-										
-									</div>
-								</div>
-
-								<div class="col-md-3">
-									<div class="product-item">
-										<i class="flaticon-meter-1"></i>
-										
-											<h4>Steel Pipes</h4>
-											<p>Seamless steel pipes for petroleum refining and petrochemical.</p>
-											<a class="read-more" href="single-service.html">Read More</a>
-										
-									</div>	
-								</div>
-
-								<div class="col-md-3">
-									<div class="product-item">
-										<i class="flaticon-industrial-robot-4"></i>
-										
-											<h4>Handrail</h4>
-											<p>Is the occupation of installing or repairing piping or tubing.</p>
-											<a class="read-more" href="single-service.html">Read More</a>
-										
-									</div>	
-								</div>
-
-							</section>
-							<!-- .products-section-->	
-						</div>
-							
-						<div class="row">
-							<section class="section-welcome">
-								<div class="row">
-									<div class="col-md-6 col-xs-12 col-sm-6">
-										<div class="welcome">
-											<img src="img/welcome.jpg" alt="">
-											<div class="welcome-details">
-												<h3>Welcome to Steellex</h3>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-												<a href="#">read more</a>
-											</div>
-										</div>
-									</div>
-									<div class="col-md-6 col-xs-12 col-sm-6">
-										<div class="hiring-tab">
-
-										  <!-- Nav tabs -->
-										  <ul class="nav nav-tabs" role="tablist">
-										    <li role="presentation" class="active"><a href="#Profile" aria-controls="Profile" role="tab" data-toggle="tab">Profile</a>
-										    </li>
-										    <li role="presentation"><a href="#magazine" aria-controls="magazine" role="tab" data-toggle="tab">Company Magazine</a>
-										    </li>
-										    <li role="presentation"><a href="#corporate-values" aria-controls="corporate-values" role="tab" data-toggle="tab">Corporate Values</a>
-										    </li>
-										    <li role="presentation"><a href="#mission" aria-controls="mission" role="tab" data-toggle="tab">Company Mission/ Vision</a>
-										    </li>
-										  </ul>
-
-										  <!-- Tab panes -->
-										  <div class="tab-content">
-										    	<div role="tabpanel" class="tab-pane fade in active" id="Profile">
-													<div class="tab-content-details">
-														<span>Great opportunities</span>
-														<h4>We are Hiring</h4>
-														<img src="img/profile.jpg" alt="">
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip. consectetur adipisicing elit.</p>
-													</div>
-										    	</div>
-										    	<div role="tabpanel" class="tab-pane fade" id="magazine">
-													<div class="tab-content-details">
-														<span>Our activities</span>
-														<h4>Company Magazine</h4>
-														<img src="img/profile.jpg" alt="">
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip. consectetur adipisicing elit.</p>
-													</div>										    	
-										    	</div>
-										    	<div role="tabpanel" class="tab-pane fade" id="corporate-values">
-													<div class="tab-content-details">
-														<span>Our market value</span>
-														<h4>Corporate Values</h4>
-														<img src="img/profile.jpg" alt="">
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip. consectetur adipisicing elit.</p>
-													</div>										    		
-										    	</div>
-										    	<div role="tabpanel" class="tab-pane fade" id="mission">
-													<div class="tab-content-details">
-														<span>Great opportunities</span>
-														<h4>Company Mission/ Vision</h4>
-														<img src="img/profile.jpg" alt="">
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation ullamco laboris nisi ut aliquip. consectetur adipisicing elit.</p>
-													</div>										    		
-										    	</div>
-										  </div>
-										</div>
-									</div>									
-								</div>
-							</section>
-							<!-- .section-welcome -->  
-						</div>
-						<!-- section row --> 
-
-						<div class="row">
-							<section class="call-to-action">
-								<div class="row">
-									<div class="col-md-4">
-										<div class="action-serve">
-											<h3>We Serve to Meet</h3>
-											<h4>Your Fabrication Need</h4>
-											<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-										</div>
-									</div>
-									<div class="col-md-8">
-										<div id="action-testimonial">
-											<div class="item">
-												<div class="client-thumb pull-left">
-													<img src="img/client1.jpg" alt="">
-												</div>
-												<div class="client-comments pull-right">
-													<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-													<span class="name">Joe Elizzabeth</span>
-													<span class="designation">CEO, Steeltech Inc.</span>
-												</div>
-											</div>
-											<div class="item">
-												<div class="client-thumb pull-left">
-													<img src="img/client1.jpg" alt="">
-												</div>
-												<div class="client-comments pull-right">
-													<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-													<span class="name">Joe Elizzabeth</span>
-													<span class="designation">CEO, Steeltech Inc.</span>
-												</div>
-											</div>
-											<div class="item">
-												<div class="client-thumb pull-left">
-													<img src="img/client1.jpg" alt="">
-												</div>
-												<div class="client-comments pull-right">
-													<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-													<span class="name">Joe Elizzabeth</span>
-													<span class="designation">CEO, Steeltech Inc.</span>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-							<!-- .call-to-action -->
-						</div>
-						<!-- section row -->
-
-						<div class="row">
-							<div class="our-clients-section">
-								<div class="col-md-12">
-									<div class="our-clients-carousel">
-										<div id="our-client-thumb">
-											<div class="item">
-												<div class="client-logo">
-													<img src="img/cl-logo1.png" alt="">
-												</div>
-											</div>
-											<div class="item">
-												<div class="client-logo">
-													<img src="img/cl-logo2.png" alt="">
-												</div>
-											</div>
-											<div class="item">
-												<div class="client-logo">
-													<img src="img/cl-logo3.png" alt="">
-												</div>
-											</div>
-											<div class="item">
-												<div class="client-logo">
-													<img src="img/cl-logo4.png" alt="">
-												</div>
-											</div>
-											<div class="item">
-												<div class="client-logo">
-													<img src="img/cl-logo5.png" alt="">
-												</div>
-											</div>
-											<div class="item">
-												<div class="client-logo">
-													<img src="img/cl-logo1.png" alt="">
-												</div>
-											</div>
-											<div class="item">
-												<div class="client-logo">
-													<img src="img/cl-logo2.png" alt="">
-												</div>
-											</div>
-											<div class="item">
-												<div class="client-logo">
-													<img src="img/cl-logo3.png" alt="">
-												</div>
-											</div>
-											<div class="item">
-												<div class="client-logo">
-													<img src="img/cl-logo4.png" alt="">
-												</div>
-											</div>
-											<div class="item">
-												<div class="client-logo">
-													<img src="img/cl-logo5.png" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="customNavigation client-logo-navigation">
-				                        	<a class="next"><i class="fa fa-angle-right"></i></a>
-				                        	<a class="prev"><i class="fa fa-angle-left"></i></a>
-				                    	</div>
-									</div>								
-								</div>								
-							</div>
-							<!-- .our-clients-section-->
-						</div>
-						<!-- .row -->
-						<div class="row">
-						<section class="footer-section">
-							<div class="footer-top">
-								<div class="row">
-									<div class="col-md-3 col-sm-6">
-										<div class="about">
-											<h4>About Us</h4>
-											<img src="img/footer-about.jpg" alt="">
-											<p>Consectetuer adipiscing aenean commodo ligula eget dolor. Aenean massa sociis natoque penatibus magnis parturient montes.</p>
-											<a href="">Read More</a>
-										</div>
-									</div>
-									<div class="col-md-3 col-sm-6">
-										<div class="recent-news list-group">
-											<h4>Latest News</h4>
-											<ul>
-												<li>
-													<a href="#" title="">Consectetuer adipiscing aenean commodo ligula eget dolor.</a>
-													<span class="date">February 9, 2016
-													</span>								
-												</li>
-												<li>
-													<a href="#" title="">Consectetuer adipiscing aenean commodo ligula eget dolor.</a>
-													<span class="date">February 9, 2016
-													</span>								
-												</li>
-												<li>
-													<a href="#" title="">Consectetuer adipiscing aenean commodo ligula eget dolor.</a>
-													<span class="date">February 9, 2016
-													</span>								
-												</li>
-												
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3 col-sm-6">
-										<div class="services">
-											<h4>Services</h4>
-											<ul>
-												<li><a href="#">Structural</a></li>
-												<li><a href="#">Pipe</a></li>
-												<li><a href="#">Water Tanks</a></li>
-												<li><a href="#">Oil Tanks</a></li>
-												<li><a href="#">Steel Angels</a></li>
-												<li><a href="#">Steel Beams</a></li>
-												<li><a href="#">Stacks</a></li>
-												<li><a href="#">Ducting</a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="col-md-3 col-sm-6">
-										<div class="get-in-Touch">
-											<h4>Get in Touch</h4>
-											<address>
-											 	<i class="fa fa-map-marker"></i>
-												Mountain Drive, Kensington,<br> Newyork, USA.
-											</address>
-											<address>
-											 	<i class="fa fa-phone"></i>
-												12 345 890123<br>Mon-Fri, 9am until 6pm 
-											</address>
-											<address>
-											 	<i class="fa fa-envelope-o"></i>
-											 	<a href="mailto:sales@steelex.com">sales@steelex.com </a>
-												<br>
-												We reply within 24 hours
-											</address>
-										</div>
-									</div>
-								</div>
-							</div>
-						<!--End .footer-top-->
-							<footer class="footer">
-								<div class="row">
-									<div class="col-md-6">
-										<div class="copyright">
-											<p> 
-											&copy; Metal 2015. All Rights Reserved. | Design by: <a href="uicookies.com" title="_blank">uiCookies</a>
-											</p>
-										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="footer-social">
-											<ul>
-												<li><a href=""><i class="fa fa-facebook"></i>Facebook</a></li>
-												<li><a href=""><i class="fa fa-twitter"></i>Twitter</a></li>
-												<li><a href=""><i class="fa fa-linkedin"></i>Linkedin</a></li>
-												<li><a href=""><i class="fa fa-google-plus"></i>Google+</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</footer>
-						</section>
-						</div>
-						<!-- .footer-section -->
-						
-					</div>
-					<!-- .container-->
-				</div>
-				<!--content-wrapper-->
-			</div>
-        	<!-- offcanvas-pusher -->
-
-	        <div class="offcanvas-menu offcanvas-effect visible-xs">
-	          <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas" id="off-canvas-close-btn">&times;</button>
-	          <div>
-	            <div>
-		            <ul id="menu">
-		              <li><a href="index.html">Home</a></li>
-				      <li><a href="about.html">About us</a></li>
-				      <li><a href="service.html">Services</a></li>
-				      <li><a href="contact.html">Contact us</a></li>
-		            </ul>
-	            </div>
-	          </div>
-	        </div>
-	        <!-- offcanvas-menu end -->			
-		</div>
-		<!-- #wrapper -->
+                    </div>
+                </div>
+            </div>
+            <!-- /.services --> 
+        </div>
+        <!-- /.container -->
+    </div><!-- #video -->
 
 
-		<!-- =========================================
-		JAVASCRIPT
-		========================================== -->
-
-		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/hippo-off-canvas.js"></script>
-		<script src="js/script.js"></script>
-		<script src="http://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 
 
-		
-	</body>
-	</html>
+    <div id="story" class="light-wrapper">
+        <div class="container inner">
+            <div class="row story">
+                <div class="col-sm-6">
+                    <div class="col-wrapper">
+                        <img class="bottom-marged" src="img/content-left.jpg">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="col-wrapper">
+                        <p><span class="up-caps">Y</span>ou may think that only you are a prisoner, but other people are also prisoners. You are in a small prison, but others are in the big prison outside. When will they be released? Think that you are a yogi and that you are pursuing your sadhana in this particular place and at this particular moment. Immediately you will experience great joy. If you change your understanding, you will be free in a minute. Dpuf ullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient monte nascetur ultricies vehicula.</p>
+
+                        <p>
+                            ou may think that only you are a prisoner, but other people are also prisoners. You are in a small prison, but others are in the big prison outside. When will they be released? Think that you are a yogi and that you are pursuing your sadhana in this particular place and at this particular moment. Immediately you will experience great joy. If you change your understanding, you will be free in a minute. Dpuf ullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient monte nascetur ultricies vehicula.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.services --> 
+        </div>
+        <!-- /.container -->
+    </div><!-- #story -->
+
+
+    <div id="gallery" class="grid">
+        <figure class="effect-bubba">
+            <img src="img/gallery/1.jpg" alt="img01">
+            <figcaption>
+                <h2>Nice <span>Lily</span></h2>
+                <p>Lily likes to play with crayons and pencils</p>
+                <a href="#">View more</a>
+            </figcaption>           
+        </figure>
+        <figure class="effect-bubba">
+            <img src="img/gallery/2.jpg" alt="img02">
+            <figcaption>
+                <h2>Holy <span>Sadie</span></h2>
+                <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+                <a href="#">View more</a>
+            </figcaption>           
+        </figure>
+        <figure class="effect-bubba">
+            <img src="img/gallery/3.jpg" alt="img07">
+            <figcaption>
+                <h2>Dreamy <span>Honey</span> <i>Now</i></h2>
+                <a href="#">View more</a>
+            </figcaption>           
+        </figure>
+        <figure class="effect-bubba">
+            <img src="img/gallery/4.jpg" alt="img04">
+            <figcaption>
+                <h2>Crazy <span>Layla</span></h2>
+                <p>When Layla appears, she brings an eternal summer along.</p>
+                <a href="#">View more</a>
+            </figcaption>           
+        </figure>
+        <figure class="effect-bubba">
+            <img src="img/gallery/5.jpg" alt="img14">
+            <figcaption>
+                <h2>Creative <span>Zoe</span></h2>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-heart"></span>
+                <span class="glyphicon glyphicon-comment"></span>
+                <p>Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
+                <a href="#">View more</a>
+            </figcaption>           
+        </figure>
+        <figure class="effect-bubba">
+            <img src="img/gallery/6.jpg" alt="img08">
+            <figcaption>
+                <h2>Warm <span>Oscar</span></h2>
+                <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+                <a href="#">View more</a>
+            </figcaption>           
+        </figure>
+    </div><!-- #gallery -->
+
+
+    <div id="blog" class="light-wrapper">
+        <div class="container inner">
+            <div class="title">
+                <h2 class="section-title text-center">News &amp; Events</h2>
+                <p class="lead main text-center">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+            </div>
+
+            <div class="row blog">
+                
+                <div class="col-sm-6 left">
+                    <div class="news clearfix">
+                        <img src="img/news/1.jpg" alt="">
+                        <h3>Lorem Ipsum is dummy</h3>
+                        <p>Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
+                        <a href="#" class="fold-link">Read More</a>
+                    </div>
+                    <div class="news clearfix">
+                        <img src="img/news/2.jpg" alt="">
+                        <h3>Lorem Ipsum is dummy</h3>
+                        <p>Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
+                        <a href="#" class="fold-link">Read More</a>
+                    </div>
+                    <div class="news clearfix">
+                        <img src="img/news/3.jpg" alt="">
+                        <h3>Lorem Ipsum is dummy</h3>
+                        <p>Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
+                        <a href="#" class="fold-link">Read More</a>
+                    </div>
+                </div>  <!-- col-sm-6  -->
+
+                <div class="col-sm-6 right">
+                    <div class="news clearfix">
+                        <img src="img/news/4.jpg" alt="">
+                        <h3>Lorem Ipsum is dummy</h3>
+                        <p>Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
+                        <a href="#" class="fold-link">Read More</a>
+                    </div>
+                    <div class="news clearfix">
+                        <img src="img/news/5.jpg" alt="">
+                        <h3>Lorem Ipsum is dummy</h3>
+                        <p>Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
+                        <a href="#" class="fold-link">Read More</a>
+                    </div>
+                    <div class="news clearfix">
+                        <img src="img/news/6.jpg" alt="">
+                        <h3>Lorem Ipsum is dummy</h3>
+                        <p>Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu.</p>
+                        <a href="#" class="fold-link">Read More</a>
+                    </div>
+                </div>  <!-- col-sm-6  -->
+
+            </div>
+            <!-- /.blog --> 
+        </div>
+        <!-- /.container -->
+    </div><!-- #blog -->
+
+
+    <footer id="footer" class="dark-wrapper">
+        <div class="container inner">
+            <div class="row">
+                <div class="col-sm-4">
+                    &copy; Copyright Pilates 2014
+                    <br/>Theme By <a class="themeBy" href="http://www.Themewagon.com">ThemeWagon</a>
+                </div>
+                <div class="col-sm-4">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="social-bar">
+                        <a href="#" data-toggle="tooltip" class="ion-social-twitter tooltipped" title="Twitter"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-youtube tooltipped" title="Youtube"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-vimeo tooltipped" title="Vimeo"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-facebook tooltipped" title="Facebook"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-pinterest tooltipped" title="Pinterest"></a>
+                        <a href="#" data-toggle="tooltip" class="ion-social-googleplus tooltipped" title="Google-Plus"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+    <script src="js/jquery.actual.min.js"></script>
+    <script src="js/jquery.scrollTo.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+
