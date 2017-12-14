@@ -3591,7 +3591,9 @@
 		font-size: 0.9em;
 		position: relative;
 		width: 26em;
+		
 	}
+
 
 		#sidebar h2 {
 			font-size: 1.38889em;
@@ -3678,6 +3680,9 @@
 
 			#sidebar {
 				width: 24em;
+				padding-top: 180px;
+				background-image: url(../../images/headerSm-1.jpg);
+				background-repeat: no-repeat;
 			}
 
 				#sidebar > .inner {
